@@ -5,36 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Holiday Tree Express</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styles to ensure proper layout */
+        .services-section {
+            padding: 50px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #228B22;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #228B22;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Our Services</h1>
+        <h1>Holiday Tree Express</h1>
+        <p>Your One-Stop Christmas Tree Delivery & Setup Service</p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <main>
-        <h2>What We Offer</h2>
-        <div class="services">
-            <div class="service">
-                <img src="christmas_tree.jpg" alt="Tree Delivery">
-                <h3>Tree Delivery</h3>
-                <p>We deliver fresh Christmas trees to your doorstep.</p>
+        <section class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-card">
+                    <h3>Tree Delivery</h3>
+                    <p>We deliver fresh Christmas trees to your doorstep.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Setup & Decoration</h3>
+                    <p>Let us set up and decorate your tree beautifully.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tree Disposal</h3>
+                    <p>Post-holiday cleanup made easy!</p>
+                </div>
             </div>
-            <div class="service">
-                <img src="christmas_tree.jpg" alt="Tree Decoration">
-                <h3>Setup & Decoration</h3>
-                <p>Let us set up and decorate your tree beautifully.</p>
-            </div>
-            <div class="service">
-                <img src="christmas_tree.jpg" alt="Tree Disposal">
-                <h3>Tree Disposal</h3>
-                <p>Post-holiday cleanup made easy!</p>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
