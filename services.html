@@ -6,7 +6,7 @@
     <title>Services - Holiday Tree Express</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional inline styles to ensure proper layout */
+        /* Additional inline styles */
         .services-section {
             padding: 50px 20px;
             background: #f9f9f9;
@@ -35,6 +35,18 @@
             border: 2px solid #228B22;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .service-card h3 {
@@ -67,17 +79,26 @@
         <section class="services-section">
             <h2>Our Services</h2>
             <div class="service-list">
+                <!-- Service Card 1 -->
                 <div class="service-card">
-                    <h3>Tree Delivery</h3>
-                    <p>We deliver fresh Christmas trees to your doorstep.</p>
+                    <a href="pricing.html">
+                        <h3>Tree Delivery</h3>
+                        <p>We deliver fresh Christmas trees to your doorstep with care.</p>
+                    </a>
                 </div>
+                <!-- Service Card 2 -->
                 <div class="service-card">
-                    <h3>Setup & Decoration</h3>
-                    <p>Let us set up and decorate your tree beautifully.</p>
+                    <a href="pricing.html">
+                        <h3>Setup & Decoration</h3>
+                        <p>Let us set up and decorate your tree beautifully to match your holiday theme.</p>
+                    </a>
                 </div>
+                <!-- Service Card 3 -->
                 <div class="service-card">
-                    <h3>Tree Disposal</h3>
-                    <p>Post-holiday cleanup made easy!</p>
+                    <a href="pricing.html">
+                        <h3>Tree Disposal</h3>
+                        <p>Post-holiday cleanup made easy with our tree disposal service.</p>
+                    </a>
                 </div>
             </div>
         </section>
