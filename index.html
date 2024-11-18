@@ -17,7 +17,7 @@
             color: white;
             text-align: center;
             padding: 20px;
-            background-image: url('christmas_tree.jpg'); /* Image added */
+            background-image: url('christmas_tree.jpg'); /* Replace with your image */
             background-size: cover;
             background-position: center;
         }
@@ -25,9 +25,20 @@
             font-size: 2.5em;
             text-shadow: 2px 2px #8b0000;
         }
-        header p {
-            font-size: 1.2em;
-            text-shadow: 1px 1px #8b0000;
+        nav {
+            background-color: #228B22; /* Festive green */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 20px;
@@ -100,7 +111,14 @@
         <h1>Holiday Tree Express</h1>
         <p>Your One-Stop Christmas Tree Delivery & Setup Service</p>
     </header>
-    <section>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
         <h2>Our Services</h2>
         <div class="services">
             <div class="service">
@@ -120,8 +138,21 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2>Book Your Tree</h2>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Our affordable pricing ensures you get the best value this holiday season:</p>
+        <ul>
+            <li>Under 5 feet: $50</li>
+            <li>5–8 feet: $75</li>
+            <li>Over 8 feet: $100</li>
+            <li>Setup & Decoration: +$25</li>
+            <li>Tree Disposal: +$20</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
         <form action="https://formspree.io/f/xqaklada" method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
@@ -156,6 +187,7 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+
     <footer>
         <p>© 2024 Holiday Tree Express. All rights reserved.</p>
     </footer>
