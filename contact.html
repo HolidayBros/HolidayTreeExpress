@@ -8,21 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you!</p>
+        <div class="hero">
+            <h1>Contact Us</h1>
+            <p>We’re here to make your holidays brighter. Reach out to us today!</p>
+        </div>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-        <section>
+        <section class="about">
             <h2>Get in Touch</h2>
-            <form action="https://formspree.io/f/xqaklada" method="POST">
+            <form action="https://formspree.io/f/xqaklada" method="POST" class="contact-form">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -41,7 +45,14 @@
     </main>
 
     <footer>
-        <p>© 2024 HolidayBros. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 HolidayBros | Contact us for your holiday needs!</p>
+            <ul class="socials">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
